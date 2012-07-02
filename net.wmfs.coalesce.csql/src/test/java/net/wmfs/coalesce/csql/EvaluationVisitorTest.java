@@ -28,8 +28,9 @@ public class EvaluationVisitorTest {
 		
 		try {
 			eval("'fdsfds");
+			fail();
 		} catch (ExpressionException e) {
-			assertTrue(true);
+			//should be thrown - ignore
 		}
 	}
 	
